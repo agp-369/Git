@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate OTP</title>
+</head>
+<body>
+    <input type="text" id="mobileNumber" placeholder="Enter mobile number">
+    <button onclick="generateOTP()">Generate OTP</button>
+    <div id="otpContainer" style="display: none;">
+        <p>OTP: <span id="otp"></span></p>
+    </div>
+
+    <script>
+        function generateOTP() {
+            var mobileNumber = document.getElementById('mobileNumber').value;
+
+            // Generate OTP
+            var otp = generateRandomOTP();
+
+            // Display OTP
+            document.getElementById('otp').textContent = otp;
+            document.getElementById('otpContainer').style.display = 'block';
+        }
+
+        function generateRandomOTP() {
+            // Generate random 6-digit OTP
+            return Math.floor(100000 + Math.random() * 900000).toString();
+        }
+    </script>
+</body>
+</html>
