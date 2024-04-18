@@ -1,33 +1,243 @@
+<!---------- Meta HTML Starts --------->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generate OTP</title>
-</head>
-<body>
-    <input type="text" id="mobileNumber" placeholder="Enter mobile number">
-    <button onclick="generateOTP()">Generate OTP</button>
-    <div id="otpContainer" style="display: none;">
-        <p>OTP: <span id="otp"></span></p>
+<html>
+   <head>
+      <title>my college website Template</title>
+      <link rel="stylesheet" href="university.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+<!---------- Meta HTML Ends ---------><!---------- Top Header Starts --------->
+<div class="width-100 top-header">
+    <div class="container">
+       <div class="width-100">
+          
+          <marquee class="headquote">
+             BBAU Satellite Campus Amethi:A Central A++ Grade University "Wisdom Modesty Compassion".
+          </marquee>
+       </div>
     </div>
-
-    <script>
-        function generateOTP() {
-            var mobileNumber = document.getElementById('mobileNumber').value;
-
-            // Generate OTP
-            var otp = generateRandomOTP();
-
-            // Display OTP
-            document.getElementById('otp').textContent = otp;
-            document.getElementById('otpContainer').style.display = 'block';
-        }
-
-        function generateRandomOTP() {
-            // Generate random 6-digit OTP
-            return Math.floor(100000 + Math.random() * 900000).toString();
-        }
-    </script>
-</body>
-</html>
+ </div>
+ <!---------- Top Header Ends --------->
+<!---------- Logo And Main Menu HTML Starts --------->
+<div class="width-100 header-menu">
+    <div class="container">
+       <div class="logo"> <img src="logo.jpg"> </div>
+       <ul class="main-menu">
+          <li><a href="online_exam.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="#">Academics</a></li>
+          <li><a href="#">Admission</a></li>
+          <li><a href="">Contact Us</a></li>
+       </ul>
+    </div>
+ </div>
+ <!---------- Logo And Main Menu HTML Ends --------->
+ <!---------- Slider HTML Starts --------->
+<div class="width-100">
+    <img class="slider-width slider" src="bbau_slide.jpg">
+    </div>
+    <!---------- Slider HTML Ends --------->
+    <div class="width-100 margin-top-50">
+        <div class="container">
+          <div class="width-33">
+            <div class="latest-news">
+              <div class="heading-sect">
+                <h3 class="head-title">Latest New</h3>
+              </div>
+              <marquee direction="up">
+              <ul class="latest-news-ul">
+                <li> 31 mar 2022 Ph D merit list Part 01_16 feb 2022 <img src="images/latest-news-blink-img.gif"></li>
+                <li> 31 mar 2022 Ph D merit list Part 02_16 feb 2022 <img src="images/latest-news-blink-img.gif"> </li>
+                <li> 24 May 2022 Incubation Center <img src="images/latest-news-blink-img.gif"></li>
+                <li> 31 mar 2022 Instituitional Distinctiveness <img src="images/latest-news-blink-img.gif"></li>
+                <li> 31 mar 2022 Academic Calender Session 2019-20 <img src="images/latest-news-blink-img.gif"></li>
+                <li> 16 feb 2022 Ph D merit list Part 01_16 feb 2022 <img src="images/latest-news-blink-img.gif"></li>
+                <li> 16 feb 2022 Ph D merit list Part 02_16 feb 2022 <img src="images/latest-news-blink-img.gif"></li>
+                <li> 17 Oct 2022 Consolidate academic Calender <img src="images/latest-news-blink-img.gif"></li>
+              </ul>
+              </marquee>
+            </div>
+          </div>
+      
+          <div class="width-33">
+            <div class="event-list">
+              <div class="heading-sect">
+                <h3 class="head-title">Upcoming Events</h3>
+              </div>
+              <ul class="upcoming-event-list">
+                <li><span class="event-date">29 <br>
+                  April</span><span> Seminar is conducted on BCA courses.</span> </li>
+                <li><span class="event-date">30 <br>
+                  April</span><span> Seminar is conducted on B.com courses.</span> </li>
+                <li><span class="event-date">2 <br>
+                  Mar</span><span> Conducted its 2nd convocation ceremony.</span> </li>
+                <li><span class="event-date">5 <br>
+                  Mar</span><span> Annual Meeting for Batch of BBA ( 2018 to 2021 ) and seminar will be conducted for future growth and oppurtunity.</span> </li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="width-33">
+            <div class="notice-board">
+              <div class="heading-sect">
+                <h3 class="head-title">Notice Board</h3>
+              </div>
+              <ul class="notice-board-list">
+                <li><img src="images/notice-board-img.png">	Participation in Climate Correction Day (CCD) Challenge for Mission LiFE </li>
+                <li><img src="images/notice-board-img.png"> 	West Zone Inter University Table Teniss (man) Tournament 2022-23 </li>
+                <li><img src="images/notice-board-img.png"> 	PhD Registration Form for Selected Candidates </li>
+                <li><img src="images/notice-board-img.png"> 	List of Activities organised under TEQIP-III </li>
+                <li><img src="images/notice-board-img.png"> 	Documents for empanellment of vendor for A Class contyractor </li>
+                <li><img src="images/notice-board-img.png"> 	School of Architecture College Level counselling 2022-23  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------- Information HTML Starts --------->
+<div class="width-100">
+    <div class="container">
+       <div class="width-33">
+          <div class="our-principal">
+             <div class="heading-sect">
+                <h3 class="head-title"> Useful Information</h3>
+             </div>
+             <ul class="useful-info-ul">
+                <li><img src="images/info-list-img1.png"> <a href="#">Online Service</a></li>
+                <li><img src="images/info-list-img2.png"> <a href="#">Online Results</a></li>
+                <li><img src="images/info-list-img3.png"> <a href="#">Exam Time Table</a></li>
+                <li><img src="images/info-list-img4.png"> <a href="#">Tenders</a></li>
+             </ul>
+          </div>
+       </div>
+       <div class="width-33">
+          <div class="about-us">
+             <div class="heading-sect">
+                <h3 class="head-title"> Hon'ble Members of University.</h3>
+             </div>
+             <div class="width-100 gove-sec-style">
+                <div class="width-40">
+                   <img class="governor-img" src="SandeepNayak.jpg">
+                </div>
+                <div class="width-60">
+                   <p class="governor-name">Dr. Sandip Nayak.</p>
+                   <p class="governor-designation">Directer, BBAU Satellite, Amethi</p>
+                </div>
+             </div>
+             <div class="width-40">
+                <img class="governor-img" src="Sanjay Singh.jpg">
+             </div>
+             <div class="width-60">
+                <p class="governor-name">Dr. Sanjay Singh.</p>
+                <p class="governor-designation">Hon'ble VC of BBAU Lucknow</p>
+             </div>
+          </div>
+       </div>
+       <div class="width-33">
+          <div class="certificate">
+             <div class="heading-sect">
+                <h3 class="head-title"> My College Certificate</h3>
+             </div>
+             <img src="images/my-certificate.jpg"  class="width-100"> 
+          </div>
+       </div>
+    </div>
+ </div>
+ <!---------- Information HTML Ends --------->
+ <!---------- Gallery HTML Starts --------->
+<div class="width-100 margin-top-50">
+    <div class="container">
+       <h3 class="gallery-head-style">Gallery </h3>
+       <div class="width-25"><img src="my_sir.jpg" class="gallery-img"></div>
+       <div class="width-25"><img src="my_photo.jpg" class="gallery-img"></div>
+       <div class="width-25"><img src="vc.jpg" class="gallery-img"></div>
+       <div class="width-25"><img src="seremony.jpg" class="gallery-img"></div>
+       <div class="width-25"><img src="vc_image1.jpg" class="gallery-img"></div>
+       <div class="width-25"><img src="vc_image2.jpg" class="gallery-img"></div>
+       <div class="width-25"><img src="brpatrra.jpg" class="gallery-img"></div>
+       <div class="width-25"><img src="patra_group.jpg" class="gallery-img"></div>
+    </div>
+ </div>
+ <!---------- Gallery HTML Ends --------->
+ <!---------- Recruiter List HTML Starts --------->
+<div class="width-100 margin-top-50">
+    <div class="container">
+       <h3 class="recruiter-head-style">Top Recruiters Company</h3>
+       <marquee class="recruiter-marquee">
+          <img src="flipkart.png">
+          <img src="tata.png">
+          <img src="TCS.png">
+          <img src="wipro.jpeg">
+          <img src="mahindra.png">
+          <img src="hcl.jpeg">
+          <img src="amazon.webp">
+          <img src="infosys.png">
+          <img src="ibm.png">
+          <img src="oracle.png">
+          <img src="riliance.png">
+          <img src="eclarex.png">
+          <img src="esparkbiz.jpg">
+          <img src="sonata.jpeg">
+          <img src="cognizant.jpeg">
+          <img src="bazaz.jpeg">
+          <img src="Accenture.png">
+       </marquee>
+    </div>
+ </div>
+ <!---------- Recruiter List HTML Ends --------->
+ <!---------- Footer HTML Starts --------->
+<div class="width-100 margin-top-50 footer">
+    <div class="container">
+       <div class="width-25">
+          <h2 class="quicklink-heading">Quick Links</h2>
+          <ul class="quicklink-menu">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About us</a></li>
+             <li><a href="#">Gallery</a></li>
+             <li><a href="#">Contact Us</a></li>
+          </ul>
+       </div>
+       <div class="width-25">
+          <h2 class="quicklink-heading">Student Section</h2>
+          <ul class="quicklink-menu">
+             <li><a href="#">Result</a></li>
+             <li><a href="#">Pay Fee</a></li>
+             <li><a href="#">Training</a></li>
+             <li><a href="#">Placements</a></li>
+          </ul>
+       </div>
+       <div class="width-25">
+          <h2 class="quicklink-heading">Information Link</h2>
+          <ul class="quicklink-menu">
+             <li><a href="#">News</a></li>
+             <li><a href="#">R&D Policy</a></li>
+             <li><a href="#">Anti-Ragging</a></li>
+             <li><a href="#">Admission</a></li>
+          </ul>
+       </div>
+       <div class="width-25">
+          <h2 class="quicklink-heading">GET IN TOUCH</h2>
+          <ul class="get-in-touch">
+             <li><i class="fa fa-envelope-o" aria-hidden="true"></i> E-MAIL:<a href="#" class="footer-e-mail"> agpmarkagroup@edu.com</a></li>
+             <li><i class="fa fa-headphones" aria-hidden="true"></i> WHATS-APP: +91 -123 456 789</li>
+             <li><i class="fa fa-fax" aria-hidden="true"></i> CONTACT NO.: +91 -(123)-4567890</li>
+             <li><i class="fa fa-globe" aria-hidden="true"></i> WEBSITE:<a href="#" class="footer-website"> https://www.agpmarkagroup.com</a></li>
+          </ul>
+          <ul class="social-media">
+             <li><a href="#"><img src="facebook.png"></a></li>
+             <li><a href="#"><img src="Twitter.png"></a></li>
+             <li><a href="#"><img src="youtube.png"></a></li>
+             <li><a href="#"><img src="Instagram.jpg"></a></li>
+          </ul>
+       </div>
+    </div>
+ </div>
+ <!---------- Footer HTML Ends --------->
+ <!---------- Footer Copyright HTML Starts --------->
+<div class="width-100 footer2-bacbor">
+    <p class="footer2-content">Copyright @ 2025, agpmarka.com. All Rights Reserved</p>
+ </div>
+ </body>
+ </html>
+ <!---------- Footer Copyright HTML Ends --------->
